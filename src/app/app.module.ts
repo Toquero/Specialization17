@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LogComponent } from './log/log.component';
 
 
 
@@ -19,6 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SidenavComponent,
     HomeComponent,
     DashboardComponent,
+    LogComponent,
   ],
   imports: [
     BrowserModule,

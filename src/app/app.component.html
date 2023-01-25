@@ -1,8 +1,57 @@
-
-<!--
-<app-header></app-header>
+<!-- <app-header></app-header>
 <router-outlet></router-outlet>
 <app-sidenav></app-sidenav> -->
 
-<mat-drawer-container></mat-drawer-container>
+<!-- <mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header (toggleSidebarForMe)="sidebarToggler()"></app-header>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
 
+</mat-drawer-container> -->
+
+<!--
+<mat-sidenav-container>
+  <mat-sidenav #sideNav mode="side" opened>
+    <app-sidenav>
+
+    </app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+
+    <button mat-button (click)="opened=!opened">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div>
+      <h2 style="margin-left: 20px; font-family: 'Poppins', sans-serif;" >
+        <img class="logo" src="../../src/assets/images/logo.jpg">
+        PN Counterpart
+      </h2>
+    </div>
+
+
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="side">
+
+    <mat-list>
+      <mat-list-item><a routerLink="/home" style="text-decoration: none;">Home</a></mat-list-item>
+      <mat-list-item><a routerLink="/ourteam" style="text-decoration: none;">Our Team</a></mat-list-item>
+      <mat-list-item><a routerLink="/contact" style="text-decoration: none;">Contact Us</a></mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

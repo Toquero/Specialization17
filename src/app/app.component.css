@@ -1,0 +1,26 @@
+/* :host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mat-drawer{
+  width: 260px;
+  background: #2d3b45;
+}
+.mat-drawer-container{
+  height: 100%;
+
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.mat-sidenav-container{
+  height: calc(205vh - 115vh);
+}
+.mat-sidenav{
+  width: 20%;
+  background-color: #2d3b45 ;
+}
+.logo{
+  width: 20px;
+}

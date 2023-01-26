@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { FormsModule } from '@angular/forms';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,13 +18,18 @@ import {MatListModule} from '@angular/material/list';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { OurteamComponent } from './ourteam/ourteam.component';
 import { ContactComponent } from './contact/contact.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SlideComponent } from './slide/slide.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     OurteamComponent,
-    ContactComponent
+    ContactComponent,
+    DashboardComponent,
+    SlideComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,9 @@ import { ContactComponent } from './contact/contact.component';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    FormsModule
+    FormsModule,
+    SwiperModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent],

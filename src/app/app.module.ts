@@ -21,6 +21,8 @@ import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SlideComponent } from './slide/slide.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     OurteamComponent,
     ContactComponent,
     DashboardComponent,
-    SlideComponent
+    SlideComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatListModule,
     FormsModule,
     SwiperModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

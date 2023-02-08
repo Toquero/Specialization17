@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;    
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 300%;
+    color:darkorchid;
+}
+h2{
+    font-size: 300%;
+    color:darkcyan;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 80%;
+    border-radius: 5px;
+    
+}
+.question-container{
+    margin: 10px;
+    padding: 5px;
+    width: 50vw;
+    font-size: x-large;
+    text-align: center;
+    border:solid maroon 3px;
+    border-radius: 5px;
+   
+      
+}
+.result{
+    margin: 10px;
+    padding: 5px;
+    width:80vw;
+    text-align: center;
+    font-size: 50px;
+      
+}
+.option-container{
+    display: flex;
+    justify-content: space-around; 
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+        
+}
+.option{    
+    padding: 10px;
+    width: 15vw;
+    font-size: 200%;
+    background-color: pink;
+    border-radius: 25%;
+}
+.option:hover{
+    background-color: rgb(22, 7, 245);
+}
+.navigation{
+    width: 80vw;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+  
+.evaluate,.next,.previous{
+    width:15vw;
+    padding: 5px;
+    font-size:150%;
+    border-radius: 20px;
+}
+.evaluate{
+    
+    background-color: #50DBB4;
+
+}
+.evaluate:hover{
+    
+    background-color:rgb(22, 7, 245);
+
+}
+.next{
+    color: black;
+    background-color: #BF3325;
+}
+.next:hover{
+    
+    background-color:lightgoldenrodyellow ;
+}
+.previous{
+    color: black;
+    background-color: #BF3325;
+}
+.previous:hover{
+    
+    background-color: lightgoldenrodyellow;
+}
+footer{
+    background-color: rgb(126, 210, 244);
+}
+.pera{
+    font-size: 1.1rem;
+    color: rgb(75, 61, 61);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

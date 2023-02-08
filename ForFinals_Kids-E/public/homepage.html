@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../homepage.css">
+    <link rel="icon" href="../resources/LOGO1.png">
+    <title>Kids-E Home</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <a href="../public/homepage.html">
+            <img src="../resources/LOGO1.png" class="finallogo">
+        </a>
+
+        <img src="../resources/background2.png" alt="" class="kids">
+
+        <ul class="navbar-nav">
+            <form>
+                <div>
+                    <input type="search" id="mySearch" name="q" placeholder="Search the site..." size="30">
+                    <button class="searchbutton"><b>Search </b></button>
+                </div>
+            </form>
+            <br>
+            <br>
+            <a href="../public/homepage.html">
+                <button class="button1 " role="button">Home</button>
+            </a>
+            <a href="../public/contacts.html">
+                <button class="button2" role="button">Contact </button>
+            </a>
+            <a href="../public/about.html">
+                <button class="button3" role="button">About</button>
+            </a>
+            <a href="../public/parent.html">
+                <button class="button4" role="button">Parent's Suggestion</button>
+            </a>
+
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-6 bg-cat">
+            <h2 class="categories"><b>CATEGORIES:</b></h2>
+            <center>
+                <a href="../public/Disney.html">
+                    <img src="../resources/disneyicon.png" alt="">
+                </a>
+                <a href="../public/nursery.html">
+                    <img src="../resources/nurseryrymes.png" alt="">
+                </a>
+                <a href="../public/stories.html">
+                    <img src="../resources/STORIES3.png" alt="">
+                </a>
+                <a href="../public/quiz.html">
+                    <img src="../resources/quiz.png" alt="">
+                </a>
+            </center>
+            <p class="entrust"> 𝑬𝒏𝒕𝒓𝒖𝒔𝒕 𝒕𝒉𝒆 𝒄𝒐𝒎𝒇𝒐𝒓𝒕,<br> 𝒆𝒏𝒕𝒆𝒓𝒕𝒂𝒊𝒏𝒎𝒆𝒏𝒕<br> 𝒂𝒏𝒅 <br>𝒌𝒏𝒐𝒘𝒍𝒆𝒅𝒈𝒆<br>
+                𝒐𝒇 𝒚𝒐𝒖𝒓 𝒄𝒉𝒊𝒍𝒅𝒓𝒆𝒏 𝒕𝒐 𝒖𝒔</p>
+        </div>
+
+        <div class="col-5 bg-list">
+            <h2 class="list"><b>MOVIES:</b></h2>
+            <!--image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="../resources/images/11.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../resources/images/22.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../resources/images/33.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../resources/images/44.png" alt="">
+                    </div>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+            </div>
+            <!--image slider end-->
+        </div>
+    </div>
+    <br>
+    <br>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+    <!-- footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3 class="pb-3">HOME</h3>
+                    <P class="pera">Thank you for exploring here. Subscribed</P>
+                </div>
+                <div class="col-lg-3">
+                    <h3>ABOUT</h3>
+                    <P class="pera">Thank you for joining with us. Subscribed</P>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="pb-3">CONTACT</h3>
+                    <p class="pera">Thank you for this being part of us. Subscribed</p><br>
+                    Nasipit Road, Talamban <br>
+                    0912345678 <br>
+                    Kids-E@gmail.com</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="pb-3">SOCIALS</h3>
+                    <p class="pera">Thank you for browsing here. Subscribed</p>
+                    <span><a href="#"><i class="m-3 fab fa-facebook"></i></a></span>
+                    <span><a href="#"><i class="m-3 fab fa-github"></i></a></span>
+                    <span><a href="#"><i class="m-3 fab fa-google-plus"></i></a></span>
+                    <span><a href="#"><i class="m-3 fab fa-instagram"></i></a></span>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- Copyright -->
+        <section class="copyright">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="text-center text-white">
+                            <p class="text-center pt-3">@ 2022 Kids-E. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+
+
+
+    <script src="homepage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

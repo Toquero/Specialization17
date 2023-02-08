@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;    
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 300%;
+    text-align: center;
+    color: darkcyan;
+}
+.row{
+    margin-left: 1%;
+}
+footer{
+    background-color: rgb(126, 210, 244);
+}
+.pera{
+    font-size: 1.1rem;
+    color: rgb(75, 61, 61);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

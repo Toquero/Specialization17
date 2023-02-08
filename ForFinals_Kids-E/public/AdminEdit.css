@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background: radial-gradient(square, rgb(86, 83, 84) 0%, rgb(224, 227, 230) 100%);
+    min-height: 85vh;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    border: 5px solid rgb(17, 17, 16);
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    background-image: url(../resources/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    clip-path: square(49.7% at 100% 99%);
+}
+
+.title {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.title::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: #eb05ef;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.title:hover::after {
+    width: 100%;
+}
+
+.title:hover {
+    color: #eb05ef;
+    transition: 0.2s;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+form .textarea {
+    width: 75%;
+    padding: 10px;
+    background: transparent;
+    border: 3px solid black;
+    color: azure;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+#subtn {
+    border: 3px solid rgba(15, 7, 242, 0.486);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: transparent;
+
+}
+
+#subtn:hover {
+    background: rgb(8, 160, 230);
+    transition: .8s;
+}
+
+.sched {
+    margin: auto;
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+ol {
+    padding: 12px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+li {
+    position: relative;
+    padding: 14px;
+
+}
+
+.removeClass {
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.removeClass:hover {
+    background: rgba(235, 75, 7, 0.76);
+    transition: .8s;
+}
+
+.bttn {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30%;
+    background-color: #08d6b7;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    appearance: none;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.bttn:hover {
+    background-color: #0a9d87;
+}
